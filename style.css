@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to right,#E4A7C5, #D8DBE9); */
+   background: url(./gradient.avif);
+   background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #fff;
+
+}
+
+nav h1 {
+    font-size: 40px;
+    margin-left: 3rem;
+    font-family: 'Lobster',
+    cursive;
+}
+
+
+
+nav ul {
+   margin-right: 30px; 
+    
+}
+ nav ul li {
+    display: inline-block;
+    font-family: 'BIZ UDPMincho',
+    serif;
+    text-transform: capitalize;
+    
+ }
+
+nav ul li a{
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 70px;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+.cart-content {
+    text-decoration: none;
+}
+
+#cart-icon {
+    font-size: 24px;
+    margin-top: 17px;
+    color: #fff;
+    
+    
+}
+
+
+#menu-bar{
+    display: none;
+    
+}
+
+
+
+   /* SIDE NAV STYLING */
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ccc;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px 10px 30px;
+    list-style: none;
+    font-size: 22px;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.side-nav a:hover{
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 37px;
+    margin-left: 50px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+      /* MAIN CONTENT STYLING */
+
+.content {
+    display: flex;
+    overflow: hidden;
+    
+}
+
+
+.first-content{
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+.first-content h1 {
+   font-size: 70px;
+font-family: 'Abril Fatface',
+cursive;
+   text-transform: uppercase;
+   line-height: 70px;
+   line-height: 90px;
+   letter-spacing: 2px;
+   color: #fff;
+   
+}
+
+.first-content p {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'BIZ UDPMincho',
+    serif;
+    color: #fff;
+}
+
+.second-content > img{
+    margin-top: 4rem;
+}
+
+.btn {
+    margin-top: 30px;
+    font-family: 'BIZ UDPMincho',
+    serif;
+    background: transparent;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 30px;
+    transition: 0.5s;
+    
+}
+
+.btn:hover{
+    background: rgb(238, 33, 176);
+}
+
+/* ITEM PAGE STYLING */
+
+.item-header {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.item-header h1{
+    font-family: 'BIZ UDPMincho',
+    serif;
+}
+
+.card-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'BIZ UDPMincho',
+    serif;
+}
+
+.card {
+    width: 400px;
+    height: 370px;
+    border-bottom: 1px solid rgb(158, 149, 149);
+    margin: 20px;
+}
+
+.card-image1 {
+    width: 398px;
+    height: 240px;
+    background-image: url(./phantom-gt-1-min.jpg);
+    background-size: cover;
+}
+
+.card-image2 {
+    width: 398px;
+    height: 240px;
+    background-image: url(./jersey.jpg);
+    background-size: cover;
+}
+
+.card-image3 {
+    width: 398px;
+    height: 240px;
+    background-image: url(./aero.webp);
+    background-size: cover;
+}
+
+.card-image4 {
+    width: 398px;
+    height: 240px;
+    background-image: url(./away.jpg);
+    background-size: cover;
+}
+
+.card-image4 {
+    width: 398px;
+    height: 240px;
+    background-image: url(./away.jpg);
+    background-size: cover;
+}
+.card-image5 {
+    width: 398px;
+    height: 240px;
+    background-image: url(./bottlecarrier.jpg);
+    background-size: cover;
+}
+
+.card-image6 {
+    width: 398px;
+    height: 240px;
+    background-image: url(./predator.jpg);
+    background-size: cover;
+}
+
+.card-title{
+    float: left;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.card-title > a {
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: red;
+    padding: 7px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+   /* ABOUT PAGE STYLING */
+ .about-page{
+     margin-top: 2rem;
+     background: #f7f7ff;
+     padding-bottom: 70px;
+ }
+
+.about-page h1{
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'BIZ UDPMincho',
+    serif;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.about-content h3 {
+    font-family: 'BIZ UDPMincho',
+    serif;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.about-content p {
+    margin-top: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-family: sans-serif;
+}
+
+.card2 {
+    width: 370px;
+    height: 370px;
+    background: #fff;
+    margin: 20px;
+    border: 1px solid rgb(175, 168, 168);
+    transition: 0.5s;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px;
+    
+}
+   /* COLLECTION STYLING */
+
+.collection{
+    margin-bottom: 70px;
+}
+
+.collection h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'BIZ UDPMincho',
+    serif;
+}
+
+.collection-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card3.image1 {
+    width: 400px;
+    height: 370px;
+    background: url(./uefa\ ball.webp) center/cover;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.card3.image2 {
+    width: 400px;
+    height: 370px;
+    background: url(./speedboot.jpg) center/cover;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.card3.image3 {
+    width: 400px;
+    height: 370px;
+    background: url(./trainingequip.jpg) center/cover;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+
+
+
+     /* CART PAGE STYLING */
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.products-container ion-icon{
+   font-size: 25px;
+   color: #fff;
+   margin-left: 10px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+.price {
+    width: 15%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    
+     
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+    cursor: pointer;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotaltitle {
+    width: 10%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+
+   /* FOOTER STYLING */
+
+.footer-header {
+    background: #000;
+    color: #fff;
+    padding-bottom: 70px;
+    font-family: sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.footer-content1 {
+    margin-top: 30px;
+    font-family: 'Lobster',
+    cursive;
+}
+
+.footer-content p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 14px; 
+    font-family: 'BIZ UDPMincho',
+    serif;
+}
+
+.footer-content2 {
+    margin-top: 30px;
+    font-family: 'BIZ UDPMincho',
+    serif;
+}
+
+
+.footer-content3 {
+    margin-top: 30px;
+    font-family: 'BIZ UDPMincho',
+    serif;
+}
+
+
+   /* MEDIA QUERIES */
+
+
+
+
+@media(max-width:870px) {
+    #menu-bar{
+        display: flex;
+        font-size: 30px;
+    }
+    
+    nav ul li {
+        display: none;
+    }
+}

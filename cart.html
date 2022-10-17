@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Satisfy&display=swap">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+   <header>
+    <nav>
+        <h1>footkit</h1>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#footer">contact</a></li>
+    
+            <a href="cart.html" class="cart-content">
+                <ion-icon name="cart-outline" id="cart-icon"></ion-icon><span>0</span>
+            </a>
+    
+            <a onclick="openSlideMenu()">
+                <ion-icon name="menu-outline" id="menu-bar"></ion-icon>
+    
+            </a>
+        </ul>
+    
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <p class="btn-close" onclick="closeSlideMenu()">&times;</p>
+        <a href="index.html">home</a>
+        <a href="#about">about</a>
+        <a href="#shop">shop</a>
+        <a href="#footer">contact</a>
+    </div>
+
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+
+        </div>
+        <div class="products"></div>
+    </div>
+
+    
+
+    </header>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
