@@ -113,7 +113,7 @@ let carts =document.querySelectorAll('.add-to-cart')
 
 
    function totalcost(product) {
-    // console.log('the product price is',product.price);
+   
     let cartCost = localStorage.getItem('totalCost');
 
     console.log('my cartCost is', cartCost);
@@ -152,7 +152,7 @@ let carts =document.querySelectorAll('.add-to-cart')
                      <span>${item.inCart}</span>
                       <ion-icon class="decrease" name="chevron-forward-circle"></ion-icon>
                      <div class="total">
-                      $${item.inCart * item.price},00
+                      $${item.inCart * item.price}.00
                      </div>
                     
                   `
@@ -164,7 +164,7 @@ let carts =document.querySelectorAll('.add-to-cart')
                 Basket Total
                 </h4>
                 <h4 class="basketTotal">
-                 $${cartCost},00 
+                 $${cartCost}.00 
                  </h4>
            `
        }

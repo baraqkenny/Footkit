@@ -47,11 +47,9 @@ nav ul li a{
     margin-top: 10px;
     margin-right: 70px;
     color: #fff;
-}
-
-nav ul li a:hover{
     font-weight: bold;
 }
+
 
 .cart-content {
     text-decoration: none;
