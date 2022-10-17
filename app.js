@@ -116,7 +116,7 @@ let carts =document.querySelectorAll('.add-to-cart')
    
     let cartCost = localStorage.getItem('totalCost');
 
-    console.log('my cartCost is', cartCost);
+ 
     console.log(typeof cartCost)
 
     if(cartCost != null){
