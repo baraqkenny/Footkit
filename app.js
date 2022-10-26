@@ -14,26 +14,26 @@ let carts =document.querySelectorAll('.add-to-cart')
   let products = [
       {
           name: 'NIKE PHANTOM VNM',
-          tag:  'NIKE PHANTOM VNM',
+          tag:  './phantom-gt-1-min.jpg',
           price: 120,
           inCart: 0
       },
         {
-          name: 'MANCHESTER UNITED HOME JERSEY',
-          tag: 'MANCHESTER UNITED HOME JERSEY',
-          price: 70,
+          name: 'PUMA NEW COLLECTION',
+          tag: './pumaboot.jpg',
+          price: 90,
           inCart: 0
       },
         {
-          name: 'ADIDAS AEROREADY SHORT',
-          tag: 'ADIDAS AEROREADY SHORT',
-          price: 24,
+          name: 'NEW BALANCE DEFIANCE LEATHER',
+          tag: './balance.jpg',
+          price: 140,
           inCart: 0
       },
         {
-          name: 'MANCHESTER UNITED AWAY JERSEY',
-          tag: 'MANCHESTER UNITED AWAY JERSEY',
-          price: 70,
+          name: 'ADIDAS ACE 17+',
+          tag: './ace17.jpg',
+          price: 200,
           inCart: 0
       },
       {
@@ -50,6 +50,7 @@ let carts =document.querySelectorAll('.add-to-cart')
       },
 
   ]
+    //LOOPING THROUGH THE PRODUCT
 
   for(let i = 0; i < carts.length; i++){
     carts[i].addEventListener('click', ()=>{
@@ -143,7 +144,7 @@ let carts =document.querySelectorAll('.add-to-cart')
                productContainer.innerHTML += `
                 <div class="product">
                   <ion-icon name="close-circle"></ion-icon>
-                   <img src="./${item.tag}.jpg">
+                   <img src="${item.tag}">
                    <span>${item.name}</span>
                    </div>
                    <div class="price">${item.price}</div>
@@ -170,9 +171,6 @@ let carts =document.querySelectorAll('.add-to-cart')
        }
    }
 
-   
-  
-  
    onLoadCartNumbers();
    displayCart();
-  
+ 
